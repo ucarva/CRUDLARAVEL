@@ -37,6 +37,7 @@
                     <flux:navlist.item icon="academic-cap" :href="route('admin.students.index')" :current="request()->routeIs('admin.students.index')" wire:navigate>Estudiantes</flux:navlist.item>
                     <flux:navlist.item icon="clipboard-document-list" :href="route('admin.teachers.index')" :current="request()->routeIs('admin.teachers.index')" wire:navigate>Profesores</flux:navlist.item>
                     <flux:navlist.item icon="book-open" :href="route('admin.subjects.index')" :current="request()->routeIs('admin.subjects.index')" wire:navigate>Materias</flux:navlist.item>
+                    <flux:navlist.item icon="presentation-chart-line" :href="route('admin.grades.index')" :current="request()->routeIs('admin.grades.index')" wire:navigate>Calificaciones</flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
             

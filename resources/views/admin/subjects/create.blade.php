@@ -11,8 +11,8 @@
         <form action="{{ route('admin.subjects.store') }}" method="POST" class="p-5">
             @csrf
             <flux:input name="name" type="text" label="Nombre" value="{{ old('name') }}" />
-            <flux:input name="description" type="text" label="Descripcion" />
-            <flux:select label="Profesor" name="teacher_id" placeholder="Seleccione el profesor" >
+            <flux:input name="description" type="text" label="Descripcion" value="{{ old('description') }}" />
+            <flux:select label="Profesor" name="teacher_id" placeholder="Seleccione el profesor"  >
             @foreach ( $teachers as $teacher )
             <flux:select.option value="{{ $teacher->id }}">{{ $teacher->name }}</flux:select.option>
             @endforeach
